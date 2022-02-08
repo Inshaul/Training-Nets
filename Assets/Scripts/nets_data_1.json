@@ -1,0 +1,95 @@
+{
+  "active_session": {
+    "id": 2,
+    "started_at": 1578027794.571,
+    "speedup_applied": 0,
+    "ends_at": 1578027824.571,
+    "instant_complete_requirements": [
+      {
+        "type": "HardCurrency",
+        "id": 1,
+        "quantity": 2
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": 1,
+      "title": "Short Drill I",
+      "description": "",
+      "level_unlock": 1,
+      "required_time": 30,
+      "investment": [
+        {
+          "type": "SoftCurrency",
+          "id": 2,
+          "quantity": 2000
+        }
+      ],
+      "outcome": [
+        {
+          "type": "SoftCurrency",
+          "id": 5,
+          "quantity": 30
+        },
+        {
+          "type": "SoftCurrency",
+          "id": 1,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Short Drill II",
+      "description": "",
+      "level_unlock": 1,
+      "required_time": 300,
+      "investment": [
+        {
+          "type": "SoftCurrency",
+          "id": 2,
+          "quantity": 10000
+        }
+      ],
+      "outcome": [
+        {
+          "type": "SoftCurrency",
+          "id": 5,
+          "quantity": 120
+        },
+        {
+          "type": "SoftCurrency",
+          "id": 1,
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Medium Drill I",
+      "description": "",
+      "level_unlock": 1,
+      "required_time": 3600,
+      "investment": [
+        {
+          "type": "SoftCurrency",
+          "id": 2,
+          "quantity": 100000
+        }
+      ],
+      "outcome": [
+        {
+          "type": "SoftCurrency",
+          "id": 5,
+          "quantity": 1000
+        },
+        {
+          "type": "SoftCurrency",
+          "id": 1,
+          "quantity": 15
+        }
+      ]
+    }
+  ]
+}
