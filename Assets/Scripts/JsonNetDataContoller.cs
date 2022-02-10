@@ -34,5 +34,13 @@ public class JsonNetDataContoller: MonoBehaviour  {
         return 0;
     }
 
- 
+    public string GetRequiredTitle(int panel_id) {
+        var items = NetData.sessions.Where(i => i.id == panel_id);
+        foreach (var item in items) {
+            return item.title;
+        }
+        return "";
+    }
+
+
 }

@@ -21,8 +21,11 @@ public class GameManager : MonoBehaviour{
     public int flag1 = 0;
     public int flag2 = 0;
 
-    public Button FinishButton;
+    public GameObject shortDrill;
+    public GameObject parentDrill;
 
+    public Button FinishButton;
+    private int i=2;
 
     private void Awake() {
 
@@ -52,6 +55,25 @@ public class GameManager : MonoBehaviour{
                 scroll_menu.SetActive(true);
             }
             
+        }
+
+        CheckEnabled();
+    }
+
+    public void CheckEnabled() {
+        if (parentDrill.active == true) {
+            SpawnDrill();
+        }
+    }
+
+    public void SpawnDrill() {
+        for(; i <= 5; i++) {
+            if(i==3 || i == 4) {
+                continue;
+            }
+            GameObject obj = Instantiate(shortDrill, parentDrill.transform);
+            NetPanel net = obj.GetComponent<NetPanel>();
+            net.RenderPanel(i);
         }
     }
 
